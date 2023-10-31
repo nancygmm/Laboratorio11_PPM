@@ -54,8 +54,8 @@ class MainActivity : AppCompatActivity() {
                         if(location==null){
                             requestNewLocationData()
                         } else{
-                            binding.tv1.text = "LATITUD = "+location.latitude.toString()
-                            binding.tv2.text = "LONGITUD = "+location.longitude.toString()
+                            binding.t1.text = "LATITUD = "+location.latitude.toString()
+                            binding.t2.text = "LONGITUD = "+location.longitude.toString()
                         }
                     }
 
@@ -70,6 +70,8 @@ class MainActivity : AppCompatActivity() {
             ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.ACCESS_COARSE_LOCATION, android.Manifest.permission.ACCESS_FINE_LOCATION), PERMISSION_ID)
         }
     }
+
+    private fun requestNewLocationData
 
     companion object{
         private val REQUIRED_PERMISSIONS_GPS= arrayOf(
